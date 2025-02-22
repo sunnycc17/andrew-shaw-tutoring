@@ -47,3 +47,9 @@ header,
 footer {
   background-color: var(--bg-royal);
 }
+
+#about {
+  background-color: var(--accent-royal);
+  color: var(--text-royal);
+}
+
