@@ -33,10 +33,7 @@
   </head>
   <body class="bg-gray-100 text-gray-900">
     <!-- HEADER N NAVI BAR -->
-    <header
-      class="fixed z-20 top-0 w-full bg-blue-900"
-      x-data="{ open: false }"
-    >
+    <header class="fixed z-20 top-0 w-full" x-data="{ open: false }">
       <nav
         class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6"
       >
@@ -76,6 +73,7 @@
           class="md:hidden p-2 text-white hover:text-blue-300 transition-all duration-300"
           @click="open = !open"
           aria-label="Toggle menu"
+          :aria-expanded="open"
         >
           <svg
             class="w-6 h-6"
@@ -96,7 +94,7 @@
 
       <!-- Mobile Navigation -->
       <div
-        class="md:hidden absolute top-full left-0 w-full bg-blue-900 p-4 transform origin-top"
+        class="bar md:hidden absolute top-full left-0 w-full p-4 transform origin-top"
         x-show="open"
         x-transition.scale.90
         x-cloak
@@ -129,14 +127,17 @@
     </header>
 
     <main>
-      <section id="home" class="p-6 mt-24">
+      <section
+        id="home"
+        class="relative h-[80vh] flex items-center justify-center text-center"
+      >
         <img
           src="public/home.jpg"
-          alt="a pianist on a grand piano performing"
-          class="inset-0 absolute"
+          alt="A pianist performing on a grand piano"
+          class="absolute inset-0 w-full h-full object-cover"
         />
         <div
-          class="relative flex flex-col top-44 items-center text-white bg-black/30 rounded-2xl p-2"
+          class="relative top-40 bg-black/40 text-white p-4 rounded-lg max-w-xl"
         >
           <h2 class="text-2xl uppercase font-light">Why Learn with Andrew?</h2>
           <p class="mt-2 italic">
@@ -148,7 +149,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="p-10 text-center bg-blue-950 bottom-0 fixed w-full">
+    <footer class="p-5 text-center bottom-0 relative w-full">
       <p data-aos="zoom-in" class="text-lg text-gray-100 mb-4">
         Follow on Social Media
       </p>
@@ -186,6 +187,7 @@
         <a
           class="underline"
           target="_blank"
+          rel="noopener noreferrer"
           href="https://www.instagram.com/sunnycc17_/"
           ><i>sunny.</i></a
         >
