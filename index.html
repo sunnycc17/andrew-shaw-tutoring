@@ -17,11 +17,104 @@
     <title>Andrew Shaw Music Lessons</title>
     <link rel="stylesheet" href="src/output.css" />
     <link rel="icon" type="icon/png" href="public/browser.png" />
+    <!-- ALPINE JS -->
+    <script src="//unpkg.com/alpinejs" defer></script>
   </head>
   <body class="bg-gray-100 text-gray-900">
-    <header class="bg-blue-600 text-white text-center py-6">
-      <h1 class="text-3xl font-bold">Andrew Shaw Music Lessons</h1>
-      <p class="text-lg">Learn Piano & Cello from a Professional Instructor</p>
+    <!-- HEADER N NAVI BAR -->
+    <header
+      class="fixed z-20 top-0 w-full bg-blue-900 border-b border-white"
+      x-data="{ open: false }"
+    >
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6"
+      >
+        <h1
+          class="text-lg font-light text-white tracking-wide uppercase md:text-xl"
+        >
+          Andrew Shaw Music Lessons
+        </h1>
+        <div class="hidden md:flex md:gap-x-10">
+          <a
+            href="#home"
+            class="px-2 text-sm font-semibold text-white hover:text-blue-300 hover:underline transition-all duration-300"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            class="px-2 text-sm font-semibold text-white hover:text-blue-300 hover:underline transition-all duration-300"
+          >
+            About
+          </a>
+          <a
+            href="#services"
+            class="px-2 text-sm font-semibold text-white hover:text-blue-300 hover:underline transition-all duration-300"
+          >
+            Services
+          </a>
+          <a
+            href="#contact"
+            class="px-2 text-sm font-semibold text-white hover:text-blue-300 hover:underline transition-all duration-300"
+          >
+            Contact
+          </a>
+        </div>
+        <!-- Hamburger Button -->
+        <button
+          class="md:hidden p-2 text-white hover:text-blue-300 transition-all duration-300"
+          @click="open = !open"
+          aria-label="Toggle menu"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <div
+        class="md:hidden absolute top-full left-0 w-full bg-blue-900 border-b border-white p-4 transform origin-top"
+        x-show="open"
+        x-transition.scale.90
+        x-cloak
+      >
+        <a
+          href="#home"
+          class="block px-4 py-2 text-sm font-semibold text-white hover:text-blue-300 hover:translate-x-2 transition-all duration-300"
+          @click="open = false"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block px-4 py-2 text-sm font-semibold text-white hover:text-blue-300 hover:translate-x-2 transition-all duration-300"
+          @click="open = false"
+          >About</a
+        >
+        <a
+          href="#services"
+          class="block px-4 py-2 text-sm font-semibold text-white hover:text-blue-300 hover:translate-x-2 transition-all duration-300"
+          @click="open = false"
+          >Services</a
+        >
+        <a
+          href="#contact"
+          class="block px-4 py-2 text-sm font-semibold text-white hover:text-blue-300 hover:translate-x-2 transition-all duration-300"
+          @click="open = false"
+          >Contact</a
+        >
+      </div>
     </header>
 
     <main class="max-w-3xl mx-auto p-6">
