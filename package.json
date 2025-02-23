@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/sunnycc17/andrew-shaw-tutoring/issues"
   },
-  "homepage": "https://github.com/sunnycc17/andrew-shaw-tutoring#readme"
+  "homepage": "https://github.com/sunnycc17/andrew-shaw-tutoring#readme",
+  "devDependencies": {
+    "prettier": "^3.5.2",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  }
 }

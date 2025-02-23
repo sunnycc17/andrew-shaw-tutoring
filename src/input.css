@@ -53,3 +53,6 @@ footer {
   color: var(--text-royal);
 }
 
+a:hover {
+  color: var(--button-royal);
+}
