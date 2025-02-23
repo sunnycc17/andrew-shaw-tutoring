@@ -149,9 +149,9 @@
       </section>
 
       <!-- ABOUT SECTION -->
-      <section id="about" class="my-10 p-5">
+      <section id="about" class="my-10 flex items-center justify-center p-5">
         <div>
-          <p>
+          <p class="max-w-4xl text-center">
             Andrew Shaw is a dedicated <strong>pianist and cellist</strong> with
             years of experience in both <strong>performance</strong> and
             <strong>teaching</strong>. He has been a member of the
@@ -169,19 +169,87 @@
           </p>
         </div>
       </section>
+
+      <!-- SERVICES SECTION -->
+      <section id="services" class="bg-gray-100 py-12 text-center">
+        <div class="container mx-auto px-6">
+          <h2 class="mb-6 text-3xl font-bold text-gray-800">Our Services</h2>
+          <p class="mb-8 text-gray-600">
+            We offer professional cello and piano lessons tailored to all skill
+            levels, helping students master technique, musicality, and
+            confidence.
+          </p>
+
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-lg bg-white p-6 shadow-lg">
+              <h3 class="text-xl font-semibold text-gray-800">
+                In-Person Lessons
+              </h3>
+              <p class="mt-2 text-gray-600">
+                Personalized face-to-face lessons to help you progress at your
+                own pace.
+              </p>
+            </div>
+            <div class="rounded-lg bg-white p-6 shadow-lg">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Online Lessons
+              </h3>
+              <p class="mt-2 text-gray-600">
+                Convenient virtual lessons from the comfort of your home.
+              </p>
+            </div>
+            <div class="rounded-lg bg-white p-6 shadow-lg">
+              <h3 class="text-xl font-semibold text-gray-800">Free Lessons</h3>
+              <p class="mt-2 text-gray-600">
+                Try out a free introductory lesson to see if it's the right fit
+                for you.
+              </p>
+            </div>
+            <div class="rounded-lg bg-white p-6 shadow-lg">
+              <h3 class="text-xl font-semibold text-gray-800">Book an Event</h3>
+              <p class="mt-2 text-gray-600">
+                Schedule a musical event or workshop with our experienced
+                instructors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--CONTACT SECTION  -->
+      <section id="contact" class="bg-white py-12 text-center">
+        <div class="container mx-auto px-6">
+          <h2 class="mb-6 text-3xl font-bold text-gray-800">Contact Us</h2>
+          <p class="mb-8 text-gray-600">
+            Get in touch with us to schedule a lesson or inquire about our
+            services.
+          </p>
+
+          <div class="flex flex-col items-center">
+            <div class="w-full max-w-md">
+              <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/your-scheduling-link"
+                style="min-width: 320px; height: 630px"
+              ></div>
+              <script
+                type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async
+              ></script>
+            </div>
+            <a
+              href="mailto:your-email@example.com"
+              class="mt-6 rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-md hover:bg-blue-700"
+              >Email Us</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-gray-900 text-white">
       <div class="mx-auto max-w-6xl px-6 py-10">
-        <!-- Brand Section -->
-        <div class="mb-8 text-center">
-          <p
-            class="text-2xl font-light tracking-wide text-gray-300 uppercase italic"
-          >
-            Andrew Shaw Music Lessons
-          </p>
-        </div>
-
         <!-- Footer Grid -->
         <div
           class="grid gap-6 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-4"
