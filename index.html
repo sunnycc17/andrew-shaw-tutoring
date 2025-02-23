@@ -33,97 +33,38 @@
   </head>
   <body class="bg-gray-200">
     <!-- HEADER N NAVI BAR -->
-    <header class="fixed top-0 z-20 w-full" x-data="{ open: false }">
+    <header class="fixed top-0 z-20 w-full">
       <nav
-        class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6"
+        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 p-4 sm:flex-row"
       >
         <h1
-          class="text-base font-light tracking-wide text-white uppercase sm:text-xl"
+          class="text-base font-light tracking-wide text-white uppercase sm:text-base"
         >
           Andrew Shaw Music Lessons
         </h1>
-        <div class="hidden md:flex md:gap-x-10">
+        <div class="flex items-center gap-x-4 sm:gap-x-1 md:mt-0 md:gap-x-10">
           <a
             href="#home"
             class="px-2 text-sm font-semibold text-white transition-all duration-300 hover:underline"
+            >Home</a
           >
-            Home
-          </a>
           <a
             href="#about"
             class="px-2 text-sm font-semibold text-white transition-all duration-300 hover:underline"
+            >About</a
           >
-            About
-          </a>
           <a
             href="#services"
             class="px-2 text-sm font-semibold text-white transition-all duration-300 hover:underline"
+            >Services</a
           >
-            Services
-          </a>
           <a
             href="#contact"
             class="px-2 text-sm font-semibold text-white transition-all duration-300 hover:underline"
+            >Contact</a
           >
-            Contact
-          </a>
         </div>
-        <!-- Hamburger Button -->
-        <button
-          class="p-2 text-white transition-all duration-300 md:hidden"
-          @click="open = !open"
-          aria-label="Toggle menu"
-          :aria-expanded="open"
-        >
-          <svg
-            class="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
       </nav>
-
-      <!-- Mobile Navigation -->
-      <div
-        class="bar absolute top-full left-0 w-full origin-top transform p-4 md:hidden"
-        x-show="open"
-        x-transition.scale.90
-        x-cloak
-      >
-        <a
-          href="#home"
-          class="block px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:translate-x-2"
-          @click="open = false"
-          >Home</a
-        >
-        <a
-          href="#about"
-          class="block px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:translate-x-2"
-          @click="open = false"
-          >About</a
-        >
-        <a
-          href="#services"
-          class="block px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:translate-x-2"
-          @click="open = false"
-          >Services</a
-        >
-        <a
-          href="#contact"
-          class="block px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:translate-x-2"
-          @click="open = false"
-          >Contact</a
-        >
-      </div>
     </header>
 
     <main>
@@ -173,7 +114,7 @@
       <!-- SERVICES SECTION -->
       <section id="services" class="bg-gray-100 py-12 text-center">
         <div class="container mx-auto px-6">
-          <h2 class="mb-6 text-3xl font-bold text-gray-800">Our Services</h2>
+          <h2 class="mb-6 text-3xl font-light text-gray-800">Our Services</h2>
           <p class="mb-8 text-gray-600">
             We offer professional cello and piano lessons tailored to all skill
             levels, helping students master technique, musicality, and
@@ -182,7 +123,7 @@
 
           <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div class="rounded-lg bg-white p-6 shadow-lg">
-              <h3 class="text-xl font-semibold text-gray-800">
+              <h3 class="text-xl font-medium text-gray-800">
                 In-Person Lessons
               </h3>
               <p class="mt-2 text-gray-600">
@@ -191,22 +132,20 @@
               </p>
             </div>
             <div class="rounded-lg bg-white p-6 shadow-lg">
-              <h3 class="text-xl font-semibold text-gray-800">
-                Online Lessons
-              </h3>
+              <h3 class="text-xl font-medium text-gray-800">Online Lessons</h3>
               <p class="mt-2 text-gray-600">
                 Convenient virtual lessons from the comfort of your home.
               </p>
             </div>
             <div class="rounded-lg bg-white p-6 shadow-lg">
-              <h3 class="text-xl font-semibold text-gray-800">Free Lessons</h3>
+              <h3 class="text-xl font-medium text-gray-800">Free Lessons</h3>
               <p class="mt-2 text-gray-600">
                 Try out a free introductory lesson to see if it's the right fit
                 for you.
               </p>
             </div>
             <div class="rounded-lg bg-white p-6 shadow-lg">
-              <h3 class="text-xl font-semibold text-gray-800">Book an Event</h3>
+              <h3 class="text-xl font-medium text-gray-800">Book an Event</h3>
               <p class="mt-2 text-gray-600">
                 Schedule a musical event or workshop with our experienced
                 instructors.
@@ -219,7 +158,7 @@
       <!--CONTACT SECTION  -->
       <section id="contact" class="bg-white py-12 text-center">
         <div class="container mx-auto px-6">
-          <h2 class="mb-6 text-3xl font-bold text-gray-800">Contact Us</h2>
+          <h2 class="mb-6 text-3xl font-light text-gray-800">Contact Us</h2>
           <p class="mb-8 text-gray-600">
             Get in touch with us to schedule a lesson or inquire about our
             services.
