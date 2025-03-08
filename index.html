@@ -31,7 +31,7 @@
     <!-- ALPINE JS -->
     <script src="//unpkg.com/alpinejs" defer></script>
   </head>
-  <body class="bg-gray-200">
+  <body class="bg-black">
     <!-- HEADER N NAVI BAR -->
     <header
       class="fixed top-0 z-20 w-full bg-black py-2 text-white"
@@ -76,9 +76,10 @@
           <div class="hidden items-center gap-x-5 md:flex">
             <a
               href="#home"
-              class="rounded-lg px-2 text-sm font-semibold hover:text-gray-400"
-              >Home</a
+              class="relative px-2 text-sm font-semibold transition-all duration-300 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:translate-x-[2px] hover:before:scale-x-100 active:scale-95"
             >
+              Home
+            </a>
             <a
               href="#my-approach"
               class="rounded-lg px-2 text-sm font-semibold hover:text-gray-400"
@@ -91,9 +92,10 @@
             >
             <a
               href="#contact"
-              class="rounded-lg px-2 text-sm font-semibold hover:text-gray-400"
-              >Contact</a
+              class="hover:text-gray relative rounded-md border border-transparent px-4 py-2 text-sm font-semibold transition-all duration-300 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:translate-x-[2px] hover:border-white hover:before:scale-x-100 active:scale-95 active:bg-gray-100"
             >
+              Contact
+            </a>
             <a
               href="#fundraisers"
               class="rounded-lg px-2 text-sm font-semibold hover:text-gray-400"
@@ -201,7 +203,7 @@
       </section>
 
       <!-- ABOUT SECTION -->
-      <section id="about" class="my-10 flex items-center justify-center p-5">
+      <!-- <section id="about" class="my-10 flex items-center justify-center p-5">
         <div>
           <p class="max-w-4xl text-center">
             Andrew Shaw is a dedicated <strong>pianist and cellist</strong> with
@@ -220,10 +222,10 @@
             <strong>rewarding musical journey</strong>.
           </p>
         </div>
-      </section>
+      </section> -->
 
       <!-- SERVICES SECTION -->
-      <section id="services" class="bg-gray-100 py-12 text-center">
+      <!-- <section id="services" class="bg-gray-100 py-12 text-center">
         <div class="container mx-auto px-6">
           <h2 class="mb-6 text-3xl font-light text-gray-800">Our Services</h2>
           <p class="mb-8 text-gray-600">
@@ -264,10 +266,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!--CONTACT SECTION  -->
-      <section id="contact" class="bg-white py-12 text-center">
+      <!-- <section id="contact" class="bg-white py-12 text-center">
         <div class="container mx-auto px-6">
           <h2 class="mb-6 text-3xl font-light text-gray-800">Contact Us</h2>
           <p class="mb-8 text-gray-600">
@@ -295,10 +297,10 @@
             >
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="bg-gray-900 text-white">
+    <footer class="text-white">
       <div class="mx-auto max-w-6xl px-6 py-10">
         <!-- Footer Grid -->
         <div
@@ -306,25 +308,37 @@
         >
           <!-- Services -->
           <div>
-            <p class="mb-3 font-medium text-yellow-500 uppercase">Services</p>
+            <p
+              class="mb-3 font-medium text-gray-400 uppercase underline underline-offset-8"
+            >
+              Services
+            </p>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="transition hover:text-yellow-400"
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
                   >In-Person Lessons</a
                 >
               </li>
               <li>
-                <a href="#" class="transition hover:text-yellow-400"
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
                   >Online Lessons</a
                 >
               </li>
               <li>
-                <a href="#" class="transition hover:text-yellow-400"
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
                   >Free Lessons</a
                 >
               </li>
               <li>
-                <a href="#" class="transition hover:text-yellow-400"
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
                   >Book an Event</a
                 >
               </li>
@@ -333,25 +347,37 @@
 
           <!-- Socials -->
           <div>
-            <p class="mb-3 font-medium text-yellow-500 uppercase">Socials</p>
+            <p
+              class="mb-3 font-medium text-gray-400 uppercase underline underline-offset-8"
+            >
+              Socials
+            </p>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="transition hover:text-yellow-400"
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
                   ><i class="ri-tiktok-line"></i> TikTok</a
                 >
               </li>
               <li>
-                <a href="#" class="transition hover:text-yellow-400"
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
                   ><i class="ri-twitter-x-line"></i> Twitter</a
                 >
               </li>
               <li>
-                <a href="#" class="transition hover:text-yellow-400"
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
                   ><i class="ri-instagram-line"></i> Instagram</a
                 >
               </li>
               <li>
-                <a href="#" class="transition hover:text-yellow-400"
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
                   ><i class="ri-facebook-box-line"></i> Facebook</a
                 >
               </li>
@@ -360,35 +386,57 @@
 
           <!-- Information -->
           <div>
-            <p class="mb-3 font-medium text-yellow-500 uppercase">
+            <p
+              class="mb-3 font-medium text-gray-400 uppercase underline underline-offset-8"
+            >
               Information
             </p>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="transition hover:text-yellow-400"
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
                   >About Us</a
                 >
               </li>
               <li>
-                <a href="#" class="transition hover:text-yellow-400"
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
                   >Contact Us</a
                 >
               </li>
               <li>
-                <a href="#" class="transition hover:text-yellow-400">FAQs</a>
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >FAQs</a
+                >
               </li>
             </ul>
           </div>
 
           <!-- More -->
           <div>
-            <p class="mb-3 font-medium text-yellow-500 uppercase">More</p>
+            <p
+              class="mb-3 font-medium text-gray-400 uppercase underline underline-offset-8"
+            >
+              More
+            </p>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="transition hover:text-yellow-400">Events</a>
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >Events</a
+                >
               </li>
               <li>
-                <a href="#" class="transition hover:text-yellow-400">Blogs</a>
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >Blogs</a
+                >
               </li>
             </ul>
           </div>
@@ -399,14 +447,16 @@
       <div
         class="border-t border-gray-700 py-4 text-center text-sm text-gray-400"
       >
-        <p>&copy; 2025 Andrew Shaw. All rights reserved.</p>
-        <a
-          href="https://www.instagram.com/sunnycc17_/"
-          class="text-yellow-500 transition hover:text-yellow-400"
-          title="Developed by Sunny"
-        >
-          ❂ Designed by Sunny
-        </a>
+        <p>
+          &copy; 2025 Andrew Shaw |<a
+            href="https://www.instagram.com/sunnycc17_/"
+            class="text-yellow-500 transition hover:text-yellow-400"
+            title="Developed by Sunny"
+          >
+            by Sunny
+          </a>
+          . All rights reserved.
+        </p>
       </div>
     </footer>
   </body>
