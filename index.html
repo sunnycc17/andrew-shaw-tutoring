@@ -31,10 +31,10 @@
     <!-- ALPINE JS -->
     <script src="//unpkg.com/alpinejs" defer></script>
   </head>
-  <body class="bg-black">
+  <body>
     <!-- HEADER N NAVI BAR -->
     <header
-      class="fixed top-0 z-20 w-full bg-black py-2 text-white"
+      class="fixed top-0 z-20 w-full bg-gradient-to-br from-black via-gray-950 via-90% to-gray-900 py-2 text-white"
       x-data="{ open: false }"
     >
       <nav
@@ -108,7 +108,7 @@
       <div class="lg:hidden" role="dialog" aria-modal="true">
         <!-- Sidebar, shown only when open is true -->
         <div
-          class="fixed inset-y-0 right-0 z-20 w-64 overflow-y-auto bg-black px-6 py-6 text-center text-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          class="fixed inset-y-0 right-0 z-20 w-64 overflow-y-auto bg-gradient-to-br from-black via-gray-950 via-90% to-gray-900 px-6 py-6 text-center text-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
           x-show="open"
           x-cloak
           @click.away="open = false"
@@ -145,28 +145,28 @@
                   @click="open = false"
                   >Home</a
                 >
-                <!-- <hr /> -->
+
                 <a
                   href="#my-approach"
                   class="hover:text-gray relative -mx-3 block rounded-md border border-transparent px-4 py-2 text-base/7 font-semibold transition-all duration-300 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:translate-x-[2px] hover:border-white hover:before:scale-x-100 active:scale-95 active:bg-gray-100"
                   @click="open = false"
                   >My Approach</a
                 >
-                <!-- <hr /> -->
+
                 <a
                   href="#lesson-Information"
                   class="hover:text-gray relative -mx-3 block rounded-md border border-transparent px-4 py-2 text-base/7 font-semibold transition-all duration-300 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:translate-x-[2px] hover:border-white hover:before:scale-x-100 active:scale-95 active:bg-gray-100"
                   @click="open = false"
                   >Lesson Information</a
                 >
-                <!-- <hr /> -->
+
                 <a
                   href="#contact"
                   class="hover:text-gray relative -mx-3 block rounded-md border border-transparent px-4 py-2 text-base/7 font-semibold transition-all duration-300 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:translate-x-[2px] hover:border-white hover:before:scale-x-100 active:scale-95 active:bg-gray-100"
                   @click="open = false"
                   >Contact</a
                 >
-                <!-- <hr /> -->
+
                 <a
                   href="#fundraisers"
                   class="hover:text-gray relative -mx-3 block rounded-md border border-transparent px-4 py-2 text-base/7 font-semibold transition-all duration-300 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:translate-x-[2px] hover:border-white hover:before:scale-x-100 active:scale-95 active:bg-gray-100"
@@ -318,7 +318,9 @@
       </section> -->
     </main>
 
-    <footer class="text-white">
+    <footer
+      class="bg-gradient-to-br from-black via-gray-950 via-90% to-gray-900 text-white"
+    >
       <div class="mx-auto max-w-6xl px-6 py-10">
         <!-- Footer Grid -->
         <div
