@@ -30,10 +30,13 @@
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-light: 300;
@@ -262,8 +265,8 @@
   .-m-2\.5 {
     margin: calc(var(--spacing) * -2.5);
   }
-  .m-2 {
-    margin: calc(var(--spacing) * 2);
+  .m-3 {
+    margin: calc(var(--spacing) * 3);
   }
   .-mx-3 {
     margin-inline: calc(var(--spacing) * -3);
@@ -338,6 +341,9 @@
   .w-full {
     width: 100%;
   }
+  .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
@@ -356,6 +362,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -368,6 +377,12 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
@@ -376,6 +391,13 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .gap-x-5 {
@@ -501,9 +523,17 @@
   .text-center {
     text-align: center;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .text-base\/7 {
     font-size: var(--text-base);
