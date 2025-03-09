@@ -262,8 +262,14 @@
   .-m-2\.5 {
     margin: calc(var(--spacing) * -2.5);
   }
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
+  }
   .-mx-3 {
     margin-inline: calc(var(--spacing) * -3);
+  }
+  .mx-2 {
+    margin-inline: calc(var(--spacing) * 2);
   }
   .mx-auto {
     margin-inline: auto;
@@ -555,9 +561,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .underline-offset-2 {
-    text-underline-offset: 2px;
   }
   .underline-offset-4 {
     text-underline-offset: 4px;
