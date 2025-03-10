@@ -228,29 +228,34 @@
       <section
         class="m-3 mx-auto flex max-w-6xl flex-wrap justify-center gap-5 space-y-6 p-6 text-center text-white"
       >
-        <button
+        <a
+          href="#my-approach"
           class="hover:text-gray relative block w-64 rounded-md border border-transparent px-6 py-3 text-center text-base font-semibold transition-all duration-300 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:translate-x-[2px] hover:border-white hover:before:scale-x-100 active:scale-95 active:bg-gray-100"
         >
           Learn More About My Approach
-        </button>
+        </a>
 
-        <button
+        <a
+          href="fundraisers"
           class="hover:text-gray relative block w-64 rounded-md border border-transparent px-6 py-3 text-center text-base font-semibold transition-all duration-300 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:translate-x-[2px] hover:border-white hover:before:scale-x-100 active:scale-95 active:bg-gray-100"
         >
           Support My Fundraisers
-        </button>
+        </a>
 
-        <button
+        <a
+          href="#contact"
           class="hover:text-gray relative block w-64 rounded-md border border-transparent px-6 py-3 text-center text-base font-semibold transition-all duration-300 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:translate-x-[2px] hover:border-white hover:before:scale-x-100 active:scale-95 active:bg-gray-100"
         >
           Contact Me
-        </button>
+        </a>
 
-        <button
+        <a
+          target="blank"
+          href="https://calendly.com/andrew_shaw2022/free"
           class="hover:text-gray relative block w-64 rounded-md border border-transparent px-6 py-3 text-center text-base font-semibold transition-all duration-300 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:translate-x-[2px] hover:border-white hover:before:scale-x-100 active:scale-95 active:bg-gray-100"
         >
           Schedule Your First Free Lesson
-        </button>
+        </a>
       </section>
 
       <!-- approach section -->
@@ -406,10 +411,23 @@
         </div>
       </section>
 
+      <h2
+        class="mt-5 flex items-center justify-center pt-5 text-center text-3xl font-bold text-white"
+      >
+        Schedule Your First Free Lesson
+      </h2>
+      <!-- Calendly Inline Embed -->
+      <div
+        id="lesson"
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/andrew_shaw2022/free"
+        style="min-width: 320px; height: 700px"
+      ></div>
+
       <!-- contact section -->
       <section
         id="contact"
-        class="mx-auto max-w-3xl border-b border-white/30 p-6 py-12 text-white"
+        class="mx-auto max-w-3xl border-t border-b border-white/30 p-6 py-12 text-white"
       >
         <h2 class="mb-6 text-center text-3xl font-bold">Get in Touch</h2>
 
@@ -708,4 +726,9 @@
       </div>
     </footer>
   </body>
+  <script
+    type="text/javascript"
+    src="https://assets.calendly.com/assets/external/widget.js"
+    async
+  ></script>
 </html>
