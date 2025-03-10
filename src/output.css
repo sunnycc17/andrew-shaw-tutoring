@@ -604,8 +604,14 @@
   .underline-offset-4 {
     text-underline-offset: 4px;
   }
+  .underline-offset-6 {
+    text-underline-offset: 6px;
+  }
   .underline-offset-8 {
     text-underline-offset: 8px;
+  }
+  .underline-offset-44 {
+    text-underline-offset: 44px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
