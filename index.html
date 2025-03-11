@@ -188,13 +188,9 @@
       <!-- HOME SECTION -->
       <section
         id="home"
-        class="relative flex min-h-screen items-center justify-center text-center"
+        class="relative flex min-h-screen items-center justify-center bg-cover bg-fixed bg-center text-center"
+        style="background-image: url(&quot;public/home.jpg&quot;)"
       >
-        <img
-          src="public/home.jpg"
-          alt="A pianist performing on a grand piano"
-          class="absolute inset-0 h-full w-full object-cover"
-        />
         <div
           class="relative top-10 mx-2 max-w-xs rounded-lg bg-black/60 p-6 text-white sm:max-w-3xl sm:text-lg md:p-8"
         >
@@ -265,13 +261,10 @@
       <!-- approach section -->
       <section
         id="my-approach"
-        class="relative mx-auto flex flex-col items-center justify-center p-6 py-12 text-white"
+        class="relative mx-auto flex flex-col items-center justify-center bg-cover bg-fixed bg-center p-6 py-12 text-white"
+        style="background-image: url(&quot;public/lesson-bg.webp&quot;)"
       >
-        <img
-          src="public/lesson-bg.webp"
-          alt="music notes book"
-          class="absolute inset-0 h-full w-full object-cover opacity-20"
-        />
+        <div class="absolute inset-0 bg-black/75"></div>
 
         <div
           class="relative flex max-w-3xl flex-col items-center justify-center"
@@ -353,15 +346,13 @@
       <!-- lesson information -->
       <section
         id="lesson-information"
-        class="relative flex flex-col items-center justify-center p-6 py-12 text-white"
+        class="relative flex flex-col items-center justify-center bg-cover bg-fixed bg-center p-6 py-12 text-white"
+        style="background-image: url(&quot;public/day murray.webp&quot;)"
       >
-        <!-- Background Image -->
-        <div
-          class="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-30"
-          style="background-image: url(&quot;public/day murray.webp&quot;)"
-        ></div>
+        <!-- Black Overlay -->
+        <div class="absolute inset-0 bg-black/75"></div>
 
-        <h2 class="mb-4 text-center text-3xl font-bold">
+        <h2 class="relative mb-4 text-center text-3xl font-bold">
           Lesson Location & Scheduling
         </h2>
 
@@ -425,7 +416,7 @@
         Schedule Your First Free Lesson
       </h2>
       <!-- Calendly Inline Embed -->
-      <div class="flex min-h-screen items-center justify-center p-4 m-5">
+      <div class="m-5 flex min-h-screen items-center justify-center p-4">
         <div
           id="lesson"
           class="calendly-inline-widget w-full max-w-md"

@@ -480,8 +480,14 @@
   .bg-black\/60 {
     background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
   }
-  .bg-gray-100 {
-    background-color: var(--color-gray-100);
+  .bg-black\/70 {
+    background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
+  }
+  .bg-black\/75 {
+    background-color: color-mix(in oklab, var(--color-black) 75%, transparent);
+  }
+  .bg-black\/80 {
+    background-color: color-mix(in oklab, var(--color-black) 80%, transparent);
   }
   .bg-gray-800 {
     background-color: var(--color-gray-800);
@@ -508,6 +514,9 @@
   }
   .bg-cover {
     background-size: cover;
+  }
+  .bg-fixed {
+    background-attachment: fixed;
   }
   .bg-center {
     background-position: center;
