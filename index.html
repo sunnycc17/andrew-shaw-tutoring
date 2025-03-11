@@ -343,7 +343,7 @@
       <div
         class="m-3 flex h-[145px] w-full items-center justify-center text-wrap text-white"
       >
-        <p class="px-2 mx-2">
+        <p class="mx-2 px-2">
           <i class="ri-error-warning-line ri-2x mr-3"></i
           ><strong> Cancellations require at least a 1-week notice</strong>
           (otherwise, you may be charged the room's rental fee of $8).
@@ -420,17 +420,19 @@
       </section>
 
       <h2
-        class="mt-5 flex items-center justify-center pt-5 text-center text-3xl font-bold text-white"
+        class="m-5 flex items-center justify-center pt-5 text-center text-3xl font-bold text-white sm:mb-0"
       >
         Schedule Your First Free Lesson
       </h2>
       <!-- Calendly Inline Embed -->
-      <div
-        id="lesson"
-        class="calendly-inline-widget"
-        data-url="https://calendly.com/andrew_shaw2022/free"
-        style="min-width: 320px; height: 700px"
-      ></div>
+      <div class="flex min-h-screen items-center justify-center p-4 m-5">
+        <div
+          id="lesson"
+          class="calendly-inline-widget w-full max-w-md"
+          data-url="https://calendly.com/andrew_shaw2022/free"
+          style="min-width: 320px; height: 700px"
+        ></div>
+      </div>
 
       <!-- contact section -->
       <section
