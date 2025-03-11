@@ -28,6 +28,10 @@
     <title>Andrew Shaw Music Lessons</title>
     <link rel="stylesheet" href="src/output.css" />
     <link rel="icon" type="icon/png" href="public/piano.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- ALPINE JS -->
     <script src="//unpkg.com/alpinejs" defer></script>
   </head>
@@ -336,7 +340,15 @@
         </div>
       </section>
 
-      <div class="w-full m-3 h-[145px]"></div>
+      <div
+        class="m-3 flex h-[145px] w-full items-center justify-center text-wrap text-white"
+      >
+        <p class="px-2 mx-2">
+          <i class="ri-error-warning-line ri-2x mr-3"></i
+          ><strong> Cancellations require at least a 1-week notice</strong>
+          (otherwise, you may be charged the room's rental fee of $8).
+        </p>
+      </div>
 
       <!-- lesson information -->
       <section
@@ -397,12 +409,6 @@
             <div>
               <h3 class="mb-2 text-xl font-semibold">Lesson Policies</h3>
               <ul class="space-y-2 text-gray-300">
-                <li>
-                  <strong
-                    >Cancellations require at least a 1-week notice</strong
-                  >
-                  (otherwise, you may be charged the room's rental fee of $8).
-                </li>
                 <li>
                   Lessons are structured to match each student's individual
                   goals.
