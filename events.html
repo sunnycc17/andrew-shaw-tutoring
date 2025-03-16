@@ -177,9 +177,9 @@
         <h1 class="mb-3 text-xl font-extrabold text-white">
           <i class="ri-calendar-event-line mr-2"></i> Events
         </h1>
-
         <p>No Upcoming Events At The Moment</p>
         <div id="calendar" class="m-2"></div>
+        <!-- Added w-full here -->
       </div>
 
       <footer class="text-white">
@@ -346,11 +346,12 @@
       </footer>
     </main>
   </body>
+
   <script>
     flatpickr("#calendar", {
       inline: true,
       noInput: true,
-      dateFormat: "Y-m-d", // Format for the date
+      dateFormat: "Y-m-d",
     });
   </script>
 </html>

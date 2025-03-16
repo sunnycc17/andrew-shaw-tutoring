@@ -4,3 +4,49 @@
   display: none !important;
 }
 
+/* Calendar container */
+.flatpickr-calendar {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #10101000 !important;
+  border-radius: 0.5rem; /* Rounded corners */
+  padding-bottom: 2px !important;
+  box-shadow: rgba(241, 231, 231, 0) 0px 4px 15px !important; /* Shadow effect */
+  width: 800px !important;
+}
+
+/* Style day cells */
+.flatpickr-day {
+  color: white !important; /* Ensure text color applies */
+}
+
+/* Hover effect on day cells */
+.flatpickr-day:hover {
+  background-color: rgb(44, 48, 44) !important; /* Green background on hover */
+  color: white !important; /* Ensure text color on hover */
+}
+
+/* Style selected day cell */
+.flatpickr-day.selected {
+  background-color: #171616 !important; /* Blue background for selected day */
+  color: white !important; /* White text on selected day */
+}
+
+/* Month header style */
+.flatpickr-month {
+  color: white !important; /* White text for month header */
+  font-weight: bold !important;
+}
+
+/* Weekday header style */
+.flatpickr-weekday {
+  font-weight: bold !important;
+  color: rgba(255, 255, 255, 0.7) !important; /* Lighter color */
+}
+
+/* Add a border around the days for better visibility */
+.flatpickr-day {
+  border-radius: 0.25rem !important;
+  margin: 2px !important;
+}
