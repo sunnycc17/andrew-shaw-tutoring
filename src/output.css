@@ -293,6 +293,9 @@
   .mt-15 {
     margin-top: calc(var(--spacing) * 15);
   }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -362,6 +365,9 @@
   }
   .w-\[700px\] {
     width: 700px;
+  }
+  .w-\[800px\] {
+    width: 800px;
   }
   .w-full {
     width: 100%;
@@ -937,6 +943,11 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
+  .sm\:w-\[800px\] {
+    @media (width >= 40rem) {
+      width: 800px;
+    }
+  }
   .sm\:max-w-3xl {
     @media (width >= 40rem) {
       max-width: var(--container-3xl);
@@ -1026,7 +1037,6 @@
   border-radius: 0.5rem;
   padding-bottom: 2px !important;
   box-shadow: rgba(241, 231, 231, 0) 0px 4px 15px !important;
-  width: 800px !important;
 }
 .flatpickr-day {
   color: white !important;
