@@ -499,6 +499,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
+  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -506,6 +510,16 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
+  }
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
+  }
+  .\!border-transparent {
+    border-color: transparent !important;
+  }
+  .\!border-white {
+    border-color: var(--color-white) !important;
   }
   .border-gray-600 {
     border-color: var(--color-gray-600);
