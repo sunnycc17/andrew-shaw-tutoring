@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
-body,
-.index-header {
+body {
   background: linear-gradient(-45deg, #000, #111, #000);
 }
 
