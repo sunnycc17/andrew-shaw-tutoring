@@ -45,7 +45,7 @@
   <body class="overflow-x-hidden">
     <!-- HEADER N NAVI BAR -->
     <header
-      class="fixed top-0 z-20 w-full index-header py-2 text-white"
+      class="index-header fixed top-0 z-20 w-full py-2 text-white"
       x-data="{ open: false }"
     >
       <nav
@@ -429,7 +429,7 @@
         <h2 class="mb-6 text-center text-3xl font-bold">Get in Touch</h2>
 
         <!-- Contact Form -->
-        <form class="space-y-4 rounded-lg bg-black/40 p-6">
+        <form class="space-y-4 p-6">
           <div>
             <label for="name" class="mb-1 block text-lg font-medium"
               >Name</label
@@ -438,7 +438,7 @@
               type="text"
               id="name"
               placeholder="Andrew Shaw"
-              class="w-full rounded-md border border-gray-600 bg-gray-800 p-2 text-white focus:ring-2 focus:ring-gray-400"
+              class="w-full rounded-md border border-white/30 p-2 text-white focus:ring-1 focus:ring-gray-400"
             />
           </div>
 
@@ -450,7 +450,7 @@
               type="email"
               id="email"
               placeholder="andrew.shaw2022@gmail.com"
-              class="w-full rounded-md border border-gray-600 bg-gray-800 p-2 text-white focus:ring-2 focus:ring-gray-400"
+              class="w-full rounded-md border border-white/30 p-2 text-white focus:ring-1 focus:ring-gray-400"
             />
           </div>
 
@@ -462,7 +462,7 @@
               type="tel"
               id="phone"
               placeholder="614-999-3305"
-              class="w-full rounded-md border border-gray-600 bg-gray-800 p-2 text-white focus:ring-2 focus:ring-gray-400"
+              class="w-full rounded-md border border-white/30 p-2 text-white focus:ring-1 focus:ring-gray-400"
             />
           </div>
 
@@ -474,37 +474,24 @@
               id="message"
               rows="4"
               placeholder="Write your message here..."
-              class="w-full rounded-md border border-gray-600 bg-gray-800 p-2 text-white focus:ring-2 focus:ring-gray-400"
+              class="w-full rounded-md border border-white/30 p-2 text-white focus:ring-1 focus:ring-gray-400"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            class="w-full rounded-md bg-black py-2 font-semibold text-white transition-all hover:bg-gray-800"
+            class="w-full rounded-md border border-white/30 bg-black py-2 font-semibold text-white transition-all hover:bg-white hover:text-black active:scale-95"
           >
             Submit
           </button>
         </form>
-
-        <!-- Social Media Links -->
-        <div class="mt-6 text-center">
-          <h3 class="mb-2 text-xl font-semibold">Follow Me</h3>
-          <div class="flex justify-center gap-4 text-gray-400">
-            <a href="#" class="transition hover:text-white"
-              ><i class="fab fa-youtube text-2xl"></i
-            ></a>
-            <a href="#" class="transition hover:text-white"
-              ><i class="fab fa-soundcloud text-2xl"></i
-            ></a>
-          </div>
-        </div>
 
         <!-- Alternative Contact -->
         <p class="mt-4 text-center text-gray-300">
           For inquiries, email me at
           <a
             href="mailto:andrew.shaw2022@gmail.com"
-            class="text-blue-400 underline hover:text-blue-300"
+            class="text-gray-600 underline hover:text-gray-400"
             >andrew.shaw2022@gmail.com</a
           >
         </p>
