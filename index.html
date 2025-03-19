@@ -45,7 +45,7 @@
   <body class="overflow-x-hidden">
     <!-- HEADER N NAVI BAR -->
     <header
-      class="fixed top-0 z-20 w-full bg-black py-2 text-white"
+      class="fixed top-0 z-20 w-full bg-black  text-white"
       x-data="{ open: false }"
     >
       <nav
@@ -421,12 +421,21 @@
         ></div>
       </div>
 
+      <!-- Message Button -->
+      <a
+        href="mailto:hello@example.com"
+        class="fixed right-6 bottom-6 rounded-md border border-white/30 bg-black px-4 py-2 text-white shadow-[0_4px_6px_rgba(255,255,255,0.3)] transition hover:bg-white"
+        aria-label="Email Us"
+      >
+        <i class="ri-chat-1-line hover:text-black"></i>
+      </a>
+
       <!-- contact section -->
       <section
         id="contact"
         class="mx-auto max-w-3xl border-t border-b border-white/30 p-6 py-12 text-white"
       >
-        <h2 class="mb-6 text-center text-3xl font-bold">Get in Touch</h2>
+        <h2 class="mb-3 text-center text-3xl font-bold">Get in Touch</h2>
 
         <!-- Contact Form -->
         <form class="space-y-4 p-6">
@@ -474,13 +483,13 @@
               id="message"
               rows="4"
               placeholder="Write your message here..."
-              class="w-full rounded-md border border-white/30 p-2 text-white focus:ring-1 focus:ring-gray-400"
+              class="w-full rounded-md border border-white/30 p-2 text-white focus:ring-2 focus:ring-gray-400 focus:outline-none"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            class="w-full rounded-md border border-white/30 bg-black py-2 font-semibold text-white transition-all hover:bg-white hover:text-black active:scale-95"
+            class="w-full rounded-md border border-white/30 bg-black py-2 font-semibold text-white shadow-[0_4px_6px_rgba(255,255,255,0.3)] transition-all hover:cursor-pointer hover:bg-white hover:text-black active:scale-95"
           >
             Submit
           </button>
