@@ -1,7 +1,23 @@
 @import "tailwindcss";
 
-body {
+body,
+.index-header {
   background: linear-gradient(-45deg, #000, #111, #000);
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Adjust as needed */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Playfair", serif;
 }
 
 [x-cloak] {
