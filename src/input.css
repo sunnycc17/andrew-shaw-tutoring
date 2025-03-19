@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  background: linear-gradient(-45deg, #000, #111, #000);
+}
+
 [x-cloak] {
   display: none !important;
 }

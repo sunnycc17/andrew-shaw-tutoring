@@ -544,9 +544,6 @@
   .bg-black\/75 {
     background-color: color-mix(in oklab, var(--color-black) 75%, transparent);
   }
-  .bg-black\/90 {
-    background-color: color-mix(in oklab, var(--color-black) 90%, transparent);
-  }
   .bg-gray-400\/20 {
     background-color: color-mix(in oklab, var(--color-gray-400) 20%, transparent);
   }
@@ -1028,6 +1025,9 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
+}
+body {
+  background: linear-gradient(-45deg, #000, #111, #000);
 }
 [x-cloak] {
   display: none !important;
