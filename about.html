@@ -16,8 +16,13 @@
         background: linear-gradient(-45deg, #000, #111, #000);
       }
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   </head>
-  <body class="flex min-h-screen items-center justify-center p-6 text-gray-300">
+  <body class="flex min-h-screen items-center justify-center p-4 text-gray-300">
     <!-- HEADER N NAVI BAR -->
     <header
       class="fixed top-0 z-20 w-full py-2 text-white"
@@ -147,62 +152,39 @@
         </div>
       </div>
     </header>
-    <main class="mt-15 flex flex-col sm:mt-0 md:flex-row">
+    <main class="mt-20 flex flex-col sm:mt-0 md:flex-row">
       <div
-        class="mt-6 w-full max-w-3xl rounded-xl border border-white/30 p-4 text-center shadow-[0_4px_15px_rgba(255,255,255,0.2)]"
+        class="mt-6 flex w-full max-w-3xl flex-col items-center justify-center rounded-xl border border-white/30 p-4 text-center shadow-[0_4px_15px_rgba(255,255,255,0.2)]"
       >
-        <h1 class="mb-3 text-xl font-extrabold text-white">
-          <i class="ri-file-3-line mr-2"></i> Frequently Asked Questions
-        </h1>
-
-        <ul class="tracking-wider text-white">
-          <li class="text-lg font-semibold text-gray-400 italic">
-            <i class="ri-arrow-right-s-line"></i>Is the first lesson free?
-          </li>
-          <p class="text-sm">Yes! It's free to help you get a feel for it.</p>
-
-          <li
-            class="mt-2 border-t border-white/30 text-lg font-semibold text-gray-400 italic"
-          >
-            <i class="ri-arrow-right-s-line"></i>
-            What should I bring?
-          </li>
-          <p class="text-sm">
-            Bring enthusiasm! I'll let you know if anything specific is needed.
+        <h1 class="mb-5 text-lg">Andrew Shaw: A Passion for Music</h1>
+        <div
+          class="mx-auto flex flex-col items-center justify-center gap-2 text-center text-wrap"
+        >
+          <p>
+            Andrew Shaw’s love for music runs deep—it’s not just something he
+            plays; it’s something he breathes. With every note, he tells a
+            story, weaving emotions into melodies that speak where words fall
+            short.
           </p>
-
-          <li
-            class="mt-2 border-t border-white/30 text-lg font-semibold text-gray-400 italic"
-          >
-            <i class="ri-arrow-right-s-line"></i>
-            Can I book multiple lessons?
-          </li>
-          <p class="text-sm">
-            Yes, schedule as many as you'd like via Calendly.
+          <p>
+            His mission is simple yet profound: to connect people through music,
+            to create moments of unity, and to let sound be a language that
+            transcends barriers.
           </p>
-
-          <li
-            class="mt-2 border-t border-white/30 text-lg font-semibold text-gray-400 italic"
-          >
-            <i class="ri-arrow-right-s-line"></i>
-            What happens during the first lesson?
-          </li>
-          <p class="text-sm">
-            We discuss your goals and start with the basics.
+          <p>
+            Passionate about self-expression, he finds freedom in improvisation,
+            letting his heart guide his hands as he crafts something raw, real,
+            and deeply human.
           </p>
-
-          <li
-            class="mt-2 border-t border-white/30 text-lg font-semibold text-gray-400 italic"
-          >
-            <i class="ri-arrow-right-s-line"></i>
-            How do I pay for lessons?
-          </li>
-          <p class="text-sm">Pay via PayPal, Zelle, CashApp, or cash.</p>
-        </ul>
+          <p>
+            For Andrew, music isn’t just an art—it’s his way of being, his voice
+            in a world that’s always listening.
+          </p>
+        </div>
       </div>
 
       <footer class="text-white">
-        <div class="mx-auto max-w-6xl px-6 py-10">
+        <div class="mx-auto max-w-7xl px-6 py-10">
           <!-- Footer Grid -->
           <div
             class="grid gap-6 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-4"
@@ -238,7 +220,7 @@
               </li> -->
                 <li>
                   <a
-                    href="index.html#lesson"
+                    href="#"
                     class="transition hover:underline hover:underline-offset-4"
                     >Book an Event</a
                   >
@@ -297,7 +279,7 @@
               <ul class="space-y-2">
                 <li>
                   <a
-                    href="about.html"
+                    href="#"
                     class="transition hover:underline hover:underline-offset-4"
                     >About</a
                   >
@@ -312,7 +294,7 @@
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="faq.html"
                     class="transition hover:underline hover:underline-offset-4"
                     >FAQs</a
                   >
@@ -365,5 +347,13 @@
       </footer>
     </main>
   </body>
+
+  <script>
+    flatpickr("#calendar", {
+      inline: true,
+      noInput: true,
+      dateFormat: "Y-m-d",
+    });
+  </script>
   <script src="script.js"></script>
 </html>
