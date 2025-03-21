@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musician Blog</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="text-white">
+    <!-- Header -->
+    <header
+      class="fixed top-0 z-20 w-full bg-black py-2 text-white"
+      x-data="{ open: false }"
+    >
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-center p-4 lg:px-6"
+        aria-label="Global"
+      >
+        <div class="absolute right-0 ml-auto flex p-2 lg:hidden">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+            @click="open = true"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="size-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="flex w-full items-center justify-between">
+          <!-- Logo (Always on the Left) -->
+          <div class="flex items-center">
+            <p class="logo text-xl font-semibold tracking-widest uppercase">
+              Andrew – Music Instructor
+            </p>
+          </div>
+
+          <!-- Navigation (Hidden on small screens) -->
+          <div class="hidden items-center gap-x-5 md:flex">
+            <a href="index.html#home" class="nav-link"> Home </a>
+            <a href="index.html#my-approach" class="nav-link">My Approach</a>
+            <a href="index.html#lesson-information" class="nav-link"
+              >Lesson Information</a
+            >
+            <a href="index.html#contact" class="nav-link"> Contact </a>
+            <a href="index.html#fundraisers" class="nav-link fundraisers-active"
+              >Fundraisers</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Sidebar, shown only when open is true -->
+        <div
+          class="fixed inset-y-0 right-0 z-20 w-64 overflow-y-auto bg-gradient-to-br from-black via-gray-950 via-90% to-gray-900 px-6 py-6 text-center text-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          x-show="open"
+          x-cloak
+          @click.away="open = false"
+        >
+          <div class="flex items-center justify-end">
+            <button
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-white"
+              @click="open = false"
+            >
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-8 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a
+                  href="index.html#home"
+                  class="mobile-nav-link"
+                  @click="open = false"
+                  >Home</a
+                >
+
+                <a
+                  href="index.html#my-approach"
+                  class="mobile-nav-link"
+                  @click="open = false"
+                  >My Approach</a
+                >
+
+                <a
+                  href="index.html#lesson-information"
+                  class="mobile-nav-link"
+                  @click="open = false"
+                  >Lesson Information</a
+                >
+
+                <a
+                  href="index.html#contact"
+                  class="mobile-nav-link"
+                  @click="open = false"
+                  >Contact</a
+                >
+
+                <a
+                  href="index.html#fundraisers"
+                  class="mobile-nav-link"
+                  @click="open = false"
+                  >Fundraisers</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Blog Container -->
+    <main class="mx-auto max-w-4xl space-y-16 px-4 py-12 mt-24">
+      <!-- Blog Post 1 -->
+      <article class="space-y-6">
+        <img
+          src="https://images.pexels.com/photos/159420/piano-instrument-music-keys-159420.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="piano"
+          class="h-80 w-full rounded-lg object-cover"
+        />
+        <h2 class="text-4xl font-bold">
+          New Album Release: "Echoes of the Night"
+        </h2>
+        <p class="text-sm text-gray-400">Published on March 21, 2025</p>
+        <p class="text-lg leading-relaxed">
+          After months of hard work, I'm excited to share my latest album,
+          "Echoes of the Night," with you all. This album reflects my deepest
+          emotions, blending soft melodies with raw, powerful beats.
+          <br /><br />
+          The journey of creating this album has been unforgettable, from
+          writing lyrics at 2 AM to recording in the studio with my closest
+          friends. I hope these songs resonate with you as much as they do with
+          me.
+        </p>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="space-y-6">
+        <img
+          src="https://images.pexels.com/photos/934067/pexels-photo-934067.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="music sheets"
+          class="h-80 w-full rounded-lg object-cover"
+        />
+        <h2 class="text-4xl font-bold">
+          Behind the Scenes: My Creative Process
+        </h2>
+        <p class="text-sm text-gray-400">Published on March 15, 2025</p>
+        <p class="text-lg leading-relaxed">
+          People always ask me about my creative process when writing music.
+          Honestly, it's never the same twice. Sometimes, it starts with a
+          single melody playing in my head, and other times, it's inspired by a
+          personal experience or a conversation.
+          <br /><br />
+          One of my favorite things to do is take long walks at night, letting
+          the city sounds influence my thoughts. Music is everywhere—we just
+          have to listen.
+        </p>
+      </article>
+    </main>
+
+    <footer class="text-white">
+      <div class="mx-auto max-w-6xl px-6 py-10">
+        <!-- Footer Grid -->
+        <div
+          class="grid gap-6 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-4"
+        >
+          <!-- Services -->
+          <div>
+            <p
+              class="mb-3 font-medium text-gray-400 uppercase underline underline-offset-8"
+            >
+              Services
+            </p>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html#lesson-information"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >In-Person Lessons</a
+                >
+              </li>
+              <li>
+                <a
+                  href="online.html"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >Online Lessons</a
+                >
+              </li>
+              <!-- <li>
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >Free Lessons</a
+                >
+              </li> -->
+              <li>
+                <a
+                  href="index.html#lesson"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >Book an Event</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Socials -->
+          <div>
+            <p
+              class="mb-3 font-medium text-gray-400 uppercase underline underline-offset-8"
+            >
+              Socials
+            </p>
+            <ul class="space-y-2">
+              <!-- <li>
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
+                  ><i class="ri-tiktok-line"></i> TikTok</a
+                >
+              </li> -->
+              <li>
+                <a
+                  target="blank"
+                  href="https://www.youtube.com/channel/UCfN12A2un_b4TcN4EYn2yHA"
+                  class="transition hover:underline hover:underline-offset-4"
+                  ><i class="ri-youtube-line"></i>Youtube</a
+                >
+              </li>
+              <li>
+                <a
+                  target="blank"
+                  href="https://www.instagram.com/andrew__2022/"
+                  class="transition hover:underline hover:underline-offset-4"
+                  ><i class="ri-instagram-line"></i>Instagram</a
+                >
+              </li>
+              <!-- <li>
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
+                  ><i class="ri-facebook-box-line"></i> Facebook</a
+                >
+              </li> -->
+            </ul>
+          </div>
+
+          <!-- Information -->
+          <div>
+            <p
+              class="mb-3 font-medium text-gray-400 uppercase underline underline-offset-8"
+            >
+              Information
+            </p>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="about.html"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://calendly.com/andrew_shaw2022/free"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- More -->
+          <div>
+            <p
+              class="mb-3 font-medium text-gray-400 uppercase underline underline-offset-8"
+            >
+              More
+            </p>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="events.html"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="transition hover:underline hover:underline-offset-4"
+                  >Blogs</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div
+        class="border-t border-gray-700 py-4 text-center text-sm text-gray-400"
+      >
+        <p>
+          &copy; 2025 Andrew Shaw |<a
+            href="https://www.instagram.com/sunnycc17_/"
+            class="text-white transition hover:text-gray-300"
+            title="Developed by Sunny"
+          >
+            by Sunny
+          </a>
+          . All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
