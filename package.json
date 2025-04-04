@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/sunnycc17/andrew-shaw-tutoring#readme",
   "devDependencies": {
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11"
   },
   "dependencies": {
